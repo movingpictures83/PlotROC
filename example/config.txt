@@ -1,0 +1,2 @@
+Prefix plugins/PlotROC/example/
+Plugin PlotROC inputfile parameters.plots.txt outputfile ROC.pdf
