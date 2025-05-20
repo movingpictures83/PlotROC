@@ -28,7 +28,9 @@ pdf(outputfile)
 meta = read.csv(paste(pfix, parameters["meta", 2], sep="/"))
 dat = readRDS(paste(pfix, parameters["data", 2], sep="/"))
 
+
 ## ----tx2----------------------------------------------------------------------
+write.csv(meta$positive, paste(outputfile, "csv", sep="."))
 plotROC(dat,meta$positive,meta$fcsign,ylim=c(0,0.8))
 
 }
